@@ -4,6 +4,7 @@ require 'json'
 require 'pp'
 
 method = ARGV[0]
+keyid = "d4f61aec-d318-4baa-8a37-d145e8d80d27"
 
 if method == nil or method == ""
 	puts "You must pass a parameter"
@@ -45,7 +46,7 @@ if method == "create"
 	end
 
 	puts "Creating.."
-	puts %x[/opt/create.sh "#{user}" "#{pass}"]
+	puts %x[/opt/create.sh "#{user}" "#{pass}" "#{keyid}"]
 elsif method == "delete"
 	puts "Insert resource_user name"
 	user = STDIN.gets.strip()
