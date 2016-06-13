@@ -31,7 +31,7 @@ if method == "create"
 		puts "Quitting"
 		exit
 	end
-	puts "Ingresar password"
+	puts "Insert password"
 	pass = STDIN.gets.strip()
 	if pass == ""
 		puts "Quitting"
